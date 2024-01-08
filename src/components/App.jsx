@@ -11,6 +11,7 @@ export const App = () => {
   const searchMovies = async (event) => {
     event.preventDefault()
     const mov = await fetch(`https://www.omdbapi.com/?apikey=9c088b33&s=${inputValue}`)
+    if (mov.Response === 'False') return
     const result = await mov.json()
     setMovies(result)
   }
