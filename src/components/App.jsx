@@ -9,7 +9,7 @@ export const App = () => {
   }
   const searchMovies = async (event) => {
     event.preventDefault()
-    const mov = await fetch(`http://www.omdbapi.com/?apikey=9c088b33&s=${inputValue}`)
+    const mov = await fetch(`https://www.omdbapi.com/?apikey=9c088b33&s=${inputValue}`)
     const result = await mov.json()
     setMovies(result)
   }
