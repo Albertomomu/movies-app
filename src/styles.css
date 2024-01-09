@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   background: #252525;
   display: flex;
   flex-direction: row;
@@ -11,6 +12,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.searcher {
+  text-align: center;
 }
 
 .app {
@@ -54,14 +59,14 @@ form {
   align-items: center;
 }
 
-.movie p{
+.movie p {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   margin: 20px 25px;
 }
 
-.movie img{
+.movie img {
   height: 450px;
   width: 300px;
 }

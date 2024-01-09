@@ -15,11 +15,14 @@ export const App = () => {
     setMovies(result)
   }
   return (
-    <form onSubmit={searchMovies}>
-      <div className='app'>
-        <input className='inputSearch' value={inputValue} onChange={getInputValue} />
-        {movies && <MoviesGrid movies={movies} />}
-      </div>
-    </form>
+    <>
+      <h1 className='searcher'>Film searcher</h1>
+      <form onSubmit={searchMovies}>
+        <div className='app'>
+          <input className='inputSearch' value={inputValue} onChange={getInputValue} />
+          {movies && movies.Search && <MoviesGrid movies={movies} />}
+        </div>
+      </form>
+    </>
   )
 }
