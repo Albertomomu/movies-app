@@ -25,7 +25,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonSearch {
+  padding: 13px 30px;
+  background-color: #141414;
+  color: white;
+  font-size: .8rem;
+  border: none;
 }
 
 form {
