@@ -20,7 +20,11 @@ export const App = () => {
       <form onSubmit={searchMovies}>
         <div className='app'>
           <input className='inputSearch' value={inputValue} onChange={getInputValue} />
-          {movies && movies.Search && <MoviesGrid movies={movies} />}
+          {inputValue.length < 3
+            ? <p>Write at least 3 characters</p>
+            : (movies && movies.Search && movies.Search.length > 0
+              ? <MoviesGrid movies={movies} />
+              : <p>No films found</p>)}
         </div>
       </form>
     </>
